@@ -150,9 +150,6 @@ p {
     grid-template-columns: repeat(2, 1fr);
   }
   .header-container {
-    display: flex;
-    gap: 20px;
-    justify-content: space-between;
     flex-direction: column-reverse;
   }
 
