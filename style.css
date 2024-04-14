@@ -1,3 +1,8 @@
+:root {
+  --primary-color: #831cd1;
+  --font-stylish: "Stylish", sans-serif;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -20,17 +25,20 @@ body {
 }
 
 .header-container h1 {
-  text-transform: uppercase;
+  font-size: 3rem;
+  padding: 20px;
+  border: 10px solid var(--primary-color);
+  height: 100%;
+  font-family: var(--font-stylish);
 }
 
 .header-container img {
-  width: 50%;
+  width: 75%;
 }
 
 h1 {
   margin-bottom: 20px;
   color: #333;
-  text-transform: uppercase;
 }
 
 p {
@@ -57,21 +65,22 @@ p {
   gap: 20px;
 }
 .grid-item-icon {
-  margin-top: 25px;
-  font-size: 2.5rem;
-  color: blue;
+  margin-top: 30px;
+  font-size: 2rem;
+  color: var(--primary-color);
 }
 .grid-item h2 {
   font-size: 2rem;
-  color: blue;
+  color: var(--primary-color);
+  font-family: var(--font-stylish);
 }
 .grid-item:hover {
   transform: scale(1.05);
 }
 /* Footer */
 .footer-section {
-  background-color: purple;
-  padding: 20px 0;
+  background-color: var(--primary-color);
+  padding: 50px 0;
   margin-top: 20px;
   position: absolute;
   bottom: 0px;
@@ -124,7 +133,7 @@ p {
 }
 
 .footer-links li a:hover {
-  color: #3498db;
+  color: #cb97ed;
 }
 
 /* Social media links styles */
@@ -142,19 +151,14 @@ p {
 }
 
 .social-links a:hover {
-  color: #3498db;
+  color: #cb97ed;
 }
-
-@media screen and (max-width: 991px) {
+@media screen and (min-width: 991px) and (max-width: 1200px) {
   .grid-container {
     grid-template-columns: repeat(2, 1fr);
   }
   .header-container {
     flex-direction: column-reverse;
-  }
-
-  .header-container h1 {
-    text-transform: uppercase;
   }
 
   .header-container img {
@@ -166,7 +170,12 @@ p {
   .grid-container {
     grid-template-columns: 1fr;
   }
-
+  .header-container {
+    flex-direction: column-reverse;
+  }
+  .header-container img{
+    width: 100%;
+  }
   .footer-container {
     flex-direction: column;
     align-items: center;
