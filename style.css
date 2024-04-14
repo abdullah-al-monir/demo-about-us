@@ -145,7 +145,7 @@ p {
   color: #3498db;
 }
 
-@media (max-width: 991px) {
+@media screen and (max-width: 991px) {
   .grid-container {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -162,12 +162,11 @@ p {
   }
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .grid-container {
     grid-template-columns: 1fr;
   }
 
-  
   .footer-container {
     flex-direction: column;
     align-items: center;
