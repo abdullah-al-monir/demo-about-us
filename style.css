@@ -65,6 +65,7 @@ p {
 .grid-item {
   padding: 20px;
   border: 1px solid #ddd;
+  border-radius: 12px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
   display: flex;
@@ -77,13 +78,12 @@ p {
 }
 .grid-item h2 {
   font-size: 2rem;
-  color: var(--primary-color);
   font-family: var(--font-stylish);
   border-bottom: 2px solid var(--primary-color);
   display: inline-block;
 }
 .grid-item:hover {
-  transform: scale(1.05);
+  transform: scale(1.03);
 }
 /* Footer */
 .footer-section {
@@ -121,6 +121,7 @@ p {
   font-size: 1.5rem;
   color: white;
   font-family: var(--font-stylish);
+  text-decoration: none;
 }
 
 /* Navigation links styles */
